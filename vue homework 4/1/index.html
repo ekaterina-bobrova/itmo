@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашка 4. Задание 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+ <div id="app">
+   <h2>Стоимость услуг</h2>
+   <div class="servesis" v-for='service in services'>
+        <label> <input type="checkbox" :value='service.price' v-model='totalPrice'><span> {{service.title}} </span> <span>: {{ service.price }} рублей </span></label>
+       
+    </div>
+    <div class="total-price">Стоимость {{ sumTotalPrice }} рублей </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
