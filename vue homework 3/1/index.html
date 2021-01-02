@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашка 3. Задание 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+ <div id="app">
+   <div class="text-content">
+        <h1 class="title"> {{ title }}</h1>
+        <label> <input type="text" v-model="inputSearch">Искать</label>
+        <div class="news-content">
+
+          <p>Статей: {{ number}}</p>        
+          <template v-for="art in findNews">
+                <div class="news__item">
+                    <h2 class="news__title"><a :href="art.url" target="_blank" class="news__link"> {{ art.title }} </a></h2>
+                    <div class="flex">
+                       <a :href="art.url" target="_blank" class="news__link" ><img :src="art.img" alt="" class="news__img"></a> 
+                       <p class="news__text"> {{ art.description }} </p>
+                    </div>  
+                </div>
+            </template>
+        </div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

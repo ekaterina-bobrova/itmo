@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia;
+}
+
+.editing_container {
+    width: 700px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.text_container {
+    width: 100%;
+}
+
+.input_container {
+    border-radius: 25px;
+    width: 700px;
+    padding: 12px 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
