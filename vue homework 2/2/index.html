@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашка 2. Задание 2</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+ <div id="menu">
+       <header class="header">
+           <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link" data-menu='home' @click='showActivePage'>{{ menu.home }}</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link" data-menu='portfolio' @click='showActivePage'>{{ menu.portfolio }} </a></li>
+                    <li class="menu__item"><a href="#" class="menu__link" data-menu='about' @click='showActivePage'>{{ menu.about }}</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link" data-menu='shop' @click='showActivePage'>{{ menu.shop }}</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <div class="menu-content" v-bind:is="curentPage">
+
+    </div>
+
+ </div>
+<script src="main.js"></script>
+</body>
+</html>
