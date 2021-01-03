@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+        <section class="product-layter" id = 'product'>
+        <div class="container">
+              <div class="product-layter__block">
+                  <form class="product-layter__form">
+                      <h2 class="section__title product-layter__subtitle banner__title">{{product.title}}</h2>
+                      <p class="list__title">Цвет: {{product.color}}</p>
+                      <p class="list__title list__title_size">Размер: {{product.size}}</p>
+                      <p v-html = "product.description" class="product-text"></p>
+                      <div class="form__btn_block">
+                          <span class="form__priсe">{{returnPrice}}<span class="form__priсe_small">{{product.price|returnPrice}}</span></span>
+                      </div>   
+                 </form>
+
+                 <div class="product-layter__wrap">
+                    <img :src="product.url" alt="" class="layter-slider_big">
+                </div>
+
+              </div>
+          </div>
+      </section>
+      <script src="script.js"></script>
+</body>
+</html>
