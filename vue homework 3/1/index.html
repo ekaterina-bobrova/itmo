@@ -11,8 +11,7 @@
         <h1 class="title"> {{ title }}</h1>
         <label> <input type="text" v-model="inputSearch">Искать</label>
         <div class="news-content">
-
-          <p>Статей: {{ number}}</p>        
+          <p>Статей найдено: {{ number}}</p>        
           <template v-for="art in findNews">
                 <div class="news__item">
                     <h2 class="news__title"><a :href="art.url" target="_blank" class="news__link"> {{ art.title }} </a></h2>
