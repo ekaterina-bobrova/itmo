@@ -33,7 +33,7 @@ input{
     display: flex;
 }
 .news__img{
-    width: 220px;
-    height: 300px;
+    width: auto;
+    height: auto;
     margin-right: 30px;
 }
