@@ -10,7 +10,6 @@ body{
     margin: 0 auto;
     margin-top: 20px;
 }
-
 label{
     display: inline-block;
     margin: 10px;
@@ -19,8 +18,9 @@ label{
     padding: 10px;   
 }
 label:hover{
-    border:1px solid#D8BFD8;
     cursor: pointer;
+    color: #DC143C;
+    background-color: #D8BFD8;
 }
 .total-price{
     margin: 10px;
