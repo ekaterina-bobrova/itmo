@@ -28,10 +28,9 @@ let app = new Vue({
         },
     ],
     inputSearch: '',
-    title: 'Искусство', 
+    title: 'Рубрика: Искусство', 
     number: 0
-        
-    },
+            },
 
     computed: {
         findNews: function() {
@@ -40,8 +39,7 @@ let app = new Vue({
                 let regular = new RegExp(`^.*${this.inputSearch}.*$`,'i');
                 let name = this.news[i].title
                 if(regular.test(name) && this.inputSearch != '') {
-                    arrNews.push(this.news[i]);
-                    
+                    arrNews.push(this.news[i]);                    
                 }
             }
             this.number = arrNews.length;
