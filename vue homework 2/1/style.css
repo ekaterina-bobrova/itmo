@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    text-align: center;
+}
+.text-content{
+    width: 980px;
+    margin: 0 auto;
+}
+.btn{
+    color:#fff;
+    background-color: #FF1493;
+    cursor: pointer;
+}
+.product-layter__block{
+    border:3px solid #008080;
+    background-color: #fff;
+    min-height: 540px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
