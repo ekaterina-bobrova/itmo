@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Домашка 5. Задание 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+ <div id="menu">
+       <header class="header">
+           <nav class="menu header__menu">
+                <ul class="menu__list" v-for='item in menu'>
+                    <li class="menu__item"><a href="#" class="menu__link" :data-menu='item' @click='showActivePage'>{{ item }}</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <div class="menu-content" v-bind:is="currentPage">
+    </div>
+ </div>
+<script src="script.js"></script>
+</body>
+</html>

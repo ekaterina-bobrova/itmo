@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Домашка 5. Задание 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+</head>
+<body>
+    <div id="app">       
+        <h1 class="gallery-title"> {{ nameSite }} </h1>
+        <v-gallery :paintings='paintings' :addfn="add" :remove="remove"></v-gallery>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>
